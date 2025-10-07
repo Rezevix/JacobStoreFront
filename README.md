@@ -12,10 +12,15 @@ Developed with **React**, **Node.js**, **MongoDB**, and **Stripe** for a smooth,
 ## 🚀 Features
 
 ✅ **Custom Controller Builder** — visitors can select controller models and choose their preferred mod options (hall effect sticks, hair triggers, tactile buttons).
+
 ✅ **Secure Checkout** — payments handled via **Stripe Checkout**.
+
 ✅ **Order Notifications** — both customer and admin receive confirmation emails.
+
 ✅ **Admin Dashboard** — sales analytics, order tracking, and stock management for Jacob only.
+
 ✅ **Scalable Backend** — structured for additional future services (console mods, accessories, etc.).
+
 ✅ **Responsive Design** — optimized for mobile and desktop.
 
 ---
