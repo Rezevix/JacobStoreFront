@@ -27,10 +27,15 @@ Built with **Java (Spring Boot)** and **React**, featuring secure payments, live
 ## 🛠️ Tech Stack
 
 **Frontend:** React, TailwindCSS, React Router
+
 **Backend:** Java 17+, Spring Boot, Spring Data JPA, Spring Security
+
 **Database:** MySQL / PostgreSQL
+
 **Payments:** Stripe Java SDK
+
 **Email Service:** JavaMailSender (Spring Boot Starter Mail)
+
 **Hosting:** Vercel (frontend) + Render / Railway / VPS (backend)
 
 ---
