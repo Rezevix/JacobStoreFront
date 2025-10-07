@@ -11,10 +11,15 @@ Built with **Java (Spring Boot)** and **React**, featuring secure payments, live
 ## 🚀 Features
 
 ✅ **Custom Controller Builder** — customers choose a base controller and apply mod options (hall effect sticks, hair triggers, tactile buttons).
+
 ✅ **Stripe Payments Integration** — safe, fast, and supports all major cards.
+
 ✅ **Email Notifications** — customers receive confirmation and receipts; admin receives order alerts.
+
 ✅ **Admin Dashboard** — password-protected dashboard for Jacob to view sales, manage stock, and analyze performance.
+
 ✅ **Scalable Architecture** — structured to handle future expansions like console mods or accessory sales.
+
 ✅ **Delivery Calculator** — automatic UK delivery cost calculation at checkout.
 
 ---
@@ -105,6 +110,7 @@ Supports:
 ## 👨‍💻 Developers
 
 **Developed by:** Rez @ [Nullbyte Labs](https://github.com/rezevix)
+
 **Developed by:** Holly @ [Nullbyte Labs](https://github.com/HoGoodDev)
 
 ---
