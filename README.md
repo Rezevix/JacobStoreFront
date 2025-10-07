@@ -1,4 +1,4 @@
-**Huge WIP (work in progress), most of these features arent added yet!**
+**Huge WIP (work in progress), most of these features are not added yet!**
 
 
 # 🎮 Jacob’s Controller Modding Storefront
