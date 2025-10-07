@@ -1,37 +1,32 @@
 **Huge WIP (work in progress), most of these features arent added yet!**
 
 
-
 # 🎮 Jacob’s Controller Modding Storefront
 
-A modern, full-stack eCommerce platform built for **custom PS5 controllers** and future gaming tech services.
-Developed with **React**, **Node.js**, **MongoDB**, and **Stripe** for a smooth, secure buying experience.
+A sleek, modern storefront for **custom PS5 controllers** and future gaming services.
+Built with **Java (Spring Boot)** and **React**, featuring secure payments, live order tracking, and an admin dashboard.
 
 ---
 
 ## 🚀 Features
 
-✅ **Custom Controller Builder** — visitors can select controller models and choose their preferred mod options (hall effect sticks, hair triggers, tactile buttons).
-
-✅ **Secure Checkout** — payments handled via **Stripe Checkout**.
-
-✅ **Order Notifications** — both customer and admin receive confirmation emails.
-
-✅ **Admin Dashboard** — sales analytics, order tracking, and stock management for Jacob only.
-
-✅ **Scalable Backend** — structured for additional future services (console mods, accessories, etc.).
-
-✅ **Responsive Design** — optimized for mobile and desktop.
+✅ **Custom Controller Builder** — customers choose a base controller and apply mod options (hall effect sticks, hair triggers, tactile buttons).
+✅ **Stripe Payments Integration** — safe, fast, and supports all major cards.
+✅ **Email Notifications** — customers receive confirmation and receipts; admin receives order alerts.
+✅ **Admin Dashboard** — password-protected dashboard for Jacob to view sales, manage stock, and analyze performance.
+✅ **Scalable Architecture** — structured to handle future expansions like console mods or accessory sales.
+✅ **Delivery Calculator** — automatic UK delivery cost calculation at checkout.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:** React (Vite or CRA), React Router, TailwindCSS
-**Backend:** Node.js, Express, MongoDB (Mongoose)
-**Payments:** Stripe API
-**Email Service:** Nodemailer / SendGrid
-**Hosting:** Vercel (frontend) + Render / DigitalOcean (backend)
+**Frontend:** React, TailwindCSS, React Router
+**Backend:** Java 17+, Spring Boot, Spring Data JPA, Spring Security
+**Database:** MySQL / PostgreSQL
+**Payments:** Stripe Java SDK
+**Email Service:** JavaMailSender (Spring Boot Starter Mail)
+**Hosting:** Vercel (frontend) + Render / Railway / VPS (backend)
 
 ---
 
@@ -44,88 +39,82 @@ git clone https://github.com/YOUR_USERNAME/jacobs-storefront.git
 cd jacobs-storefront
 ```
 
-### 2️⃣ Install Dependencies
-
-Frontend:
+### 2️⃣ Frontend Setup
 
 ```bash
 cd frontend
 npm install
-```
-
-Backend:
-
-```bash
-cd ../backend
-npm install
-```
-
-### 3️⃣ Configure Environment Variables
-
-Create a `.env` file inside `/backend`:
-
-```
-MONGO_URI=your_mongo_connection_string
-STRIPE_SECRET_KEY=your_stripe_secret_key
-CLIENT_URL=http://localhost:3000
-```
-
-### 4️⃣ Run the App
-
-Start backend:
-
-```bash
-npm run dev
-```
-
-Start frontend (in a second terminal):
-
-```bash
 npm start
 ```
 
-Frontend runs on `http://localhost:3000`
-Backend runs on `http://localhost:5000`
+### 3️⃣ Backend Setup
+
+```bash
+cd ../backend
+./mvnw spring-boot:run
+```
+
+---
+
+## 🔑 Environment Variables
+
+In the backend, create a `.env` or configure in `application.properties`:
+
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/jacobsmods
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+stripe.api.key=your_stripe_secret_key
+mail.username=your_email_address
+mail.password=your_email_password
+frontend.url=http://localhost:3000
+```
 
 ---
 
 ## 📊 Admin Dashboard
 
-* Displays daily/weekly/monthly sales charts.
-* Shows live order data fetched from the database.
-* Allows editing stock and viewing customer orders.
+* Accessible only to Jacob via login
+* Displays order data and analytics
+* Allows toggling product availability and prices
+* Uses REST API endpoints for data visualization
 
 ---
 
 ## 💳 Payments
 
-Integrated with **Stripe Checkout** for secure, PCI-compliant transactions.
-Supports all major credit/debit cards, Apple Pay, and Google Pay.
+Powered by **Stripe’s Java SDK** — fully PCI-compliant and secure.
+Supports:
+
+* Credit/Debit Cards
+* Apple Pay
+* Google Pay
 
 ---
 
 ## 🧱 Future Plans
 
-* Add Xbox controller modding options
-* Integrate PayPal as secondary payment method
-* Expand dashboard with product management
-* Implement user accounts and order history
+* Add Xbox and custom PC modding
+* Expand dashboard to include product CRUD management
+* Integrate PayPal SDK (secondary payment option)
+* Build Android companion app (Spring API integration)
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developers
 
-**Developed by:** Rez @ [Nullbyte Labs](https://github.com/YOUR_USERNAME)
-**Commissioned by:** Jacob — Founder of Jacob’s Mods
+**Developed by:** Rez @ [Nullbyte Labs](https://github.com/rezevix)
+**Developed by:** Holly @ [Nullbyte Labs](https://github.com/HoGoodDev)
 
 ---
 
 ## 🧾 License
 
-This project is licensed under the **MIT License**.
-Feel free to use and modify with attribution.
+Licensed under the **MIT License**.
+Free for educational and commercial use with attribution.
 
 ---
 
-> 💡 *“Custom controllers built for performance. Mods that elevate your gameplay.”*
+> 💡 *“Precision-built mods for precision players.”*
 > — Jacob’s Mods
